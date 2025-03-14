@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>SR kanaler</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+
+<body>
+    <header id="mainheader">
+        <div class="contain">
+            <h1 id="logo">Sveriges Radio Multi Application</h1>
+            <section id="search">
+                <h2>Search Results</h2>
+                <label for="searchProgram">Search:</label>
+                    <select id="searchProgram" class="form-control">
+                    <option value="132">P1</option>
+                    <option value="163">P2</option>
+                    <option value="164">P3</option>
+                    <option value="213">P4 Blekinge</option>
+                    <option value="223">P4 Dalarna</option>
+                    <option value="205">P4 Gotland</option>
+                    <option value="210">P4 Gävleborg</option>
+                    <option value="212">P4 Göteborg</option>
+                    <option value="220">P4 Halland</option>
+                    <option value="200">P4 Jämtland</option>
+                    <option value="203">P4 Jönköping</option>
+                    <option value="201">P4 Kalmar</option>
+                    <option value="211">P4 Kristianstad</option>
+                    <option value="214">P4 Kronoberg</option>
+                    <option value="207">P4 Malmöhus</option>
+                    <option value="209">P4 Norrbotten</option>
+                    <option value="206">P4 Sjuhärad</option>
+                    <option value="208">P4 Skaraborg</option>
+                    <option value="701">P4 Stockholm</option>
+                    <option value="202">P4 Sörmland</option>
+                    <option value="218">P4 Uppland</option>
+                    <option value="204">P4 Värmland</option>
+                    <option value="219">P4 Väst</option>
+                    <option value="215">P4 Västerbotten</option>
+                    <option value="216">P4 Västernorrland</option>
+                    <option value="217">P4 Västmanland</option>
+                    <option value="221">P4 Örebro</option>
+                    <option value="222">P4 Östergötland</option>
+                    <option value="224">SR Sápmi</option>
+                    <option value="226">Sveriges Radio Finska</option>
+                    <option value="166">P6</option>
+                    <option value="2576">P3 Din gata</option>
+                    <option value="2562">P2 Musik</option>
+                    <option value="2755">Radioapans knattekanal</option>
+                    <option value="2383">SR Extra01</option>
+                    <option value="2384">SR Extra02</option>
+                    <option value="2385">SR Extra03</option>
+                    <option value="2386">SR Extra04</option>
+                    <option value="2387">SR Extra05</option>
+                    <option value="2388">SR Extra06</option>
+                    <option value="2389">SR Extra07</option>
+                    <option value="2390">SR Extra08</option>
+                    <option value="3268">SR Extra09</option>
+                    <option value="3269">SR Extra10</option>
+                    <option value="3703">SR Extra11</option>
+                    <option value="3704">SR Extra12</option>
+                    <option value="4842">SR Extra13</option>
+                    <option value="4866">SR Extra14</option>
+                    <option value="4868">SR Extra15</option>
+                    <option value="4540">Ekot sänder direkt</option>
+                    <option value="4951">P4 Plus</option><option value="5283">P4 Södertälje</option></select>
+                <label for="searchbutton">
+                    <button id="searchbutton" class="btn btn-primary" >Visa programtablå</button>
+                </label>
+            </section>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>SR kanallista</h2>
+
+        <div class="left">
+            <section class="lan">
+                <h3>Bläddra kanallista</h3>
+                <nav id="mainnav">
+                    <ul id="mainnavlist" style="list-style-type: none"><li id="132">
+                    <img src="https://static-cdn.sr.se/images/132/2186745_512_512.jpg?preset=api-default-square" width="40" alt="P1 Svergies Radio"> P1</li><li id="163">
+                    <img src="https://static-cdn.sr.se/images/163/2186754_512_512.jpg?preset=api-default-square" width="40" alt="P2 Svergies Radio"> P2</li><li id="164">
+                    <img src="https://static-cdn.sr.se/images/164/2186756_512_512.jpg?preset=api-default-square" width="40" alt="P3 Svergies Radio"> P3</li><li id="165">
+                    <img src="https://static-cdn.sr.se/images/105/7e0c4da5-427c-4d88-9b9d-94a7b104eabb.jpg?preset=api-default-square" width="40" alt="P4 Blekinge Svergies Radio"> P4 Blekinge</li><li id="223">
+                    <img src="https://static-cdn.sr.se/images/161/37b7d118-6d38-4a7d-87fd-216caf6cb7c6.jpg?preset=api-default-square" width="40" alt="P4 Dalarna Svergies Radio"> P4 Dalarna</li><li id="205">
+                    <img src="https://static-cdn.sr.se/images/94/99c16fdf-e9b7-4232-ba4b-223f0f8e4e79.jpg?preset=api-default-square" width="40" alt="P4 Gotland Svergies Radio"> P4 Gotland</li><li id="210">
+                    <img src="https://static-cdn.sr.se/images/99/aae78c01-297f-495b-ab93-ec8eab92c0ea.jpg?preset=api-default-square" width="40" alt="P4 Gävleborg Svergies Radio"> P4 Gävleborg</li><li id="212">        
+                    <img src="https://static-cdn.sr.se/images/104/0904f0e7-53d3-4d22-b100-0c417b5db972.jpg?preset=api-default-square" width="40" alt="P4 Göteborg Svergies Radio"> P4 Göteborg</li><li id="220">
+                    <img src="https://static-cdn.sr.se/images/128/df8f9818-c563-431f-930b-be1a49705008.jpg?preset=api-default-square" width="40" alt="P4 Halland Svergies Radio"> P4 Halland</li><li id="200">
+                    <img src="https://static-cdn.sr.se/images/78/3f969001-3c0d-46c0-a3a6-30b44ef999c0.jpg?preset=api-default-square" width="40" alt="P4 Jämtland Svergies Radio"> P4 Jämtland</li><li id="203">
+                    <img src="https://static-cdn.sr.se/images/91/317c1c40-0352-49e1-913c-9c718b788419.jpg?preset=api-default-square" width="40" alt="P4 Jönköping Svergies Radio"> P4 Jönköping</li><li id="201">
+                    <img src="https://static-cdn.sr.se/images/86/2efa24a7-f80c-435d-ae1c-29d060cb645d.jpg?preset=api-default-square" width="40" alt="P4 Kalmar Svergies Radio"> P4 Kalmar</li><li id="211">
+                    <img src="https://static-cdn.sr.se/images/101/dd2bfec1-c8d5-4e43-84f2-fb91a563d946.jpg?preset=api-default-square" width="40" alt="P4 KRistiansland Svergies Radio"> P4 Kristianstad</li><li id="214">
+                    <img src="https://static-cdn.sr.se/images/106/54f2a0c0-7523-4479-b277-06e3ebf526cd.jpg?preset=api-default-square" width="40" alt="P4 Kronoberg Svergies Radio"> P4 Kronoberg</li><li id="207">
+                    <img src="https://static-cdn.sr.se/images/96/f4b9f6ef-b53c-4022-9e30-88ed80f25e2a.jpg?preset=api-default-square" width="40" alt="P4 Malmöhus Svergies Radio"> P4 Malmöhus</li><li id="209">
+                    <img src="https://static-cdn.sr.se/images/98/768b9860-f7d2-4a6d-9443-fb19ee8f0896.jpg?preset=api-default-square" width="40" alt="P4 Norrbotten Svergies Radio"> P4 Norrbotten</li><li id="206">
+                    <img src="https://static-cdn.sr.se/images/95/166bb0fb-282d-4823-a5ea-2ead69f4f662.jpg?preset=api-default-square" width="40" alt="P4 Sjuhärad Svergies Radio"> P4 Sjuhärad</li><li id="208">
+                    <img src="https://static-cdn.sr.se/images/97/c949c8a2-e03e-4b42-b395-126c6bc260b5.jpg?preset=api-default-square" width="40" alt="P4 Skaraborg Svergies Radio"> P4 Skaraborg</li><li id="701">
+                    <img src="https://static-cdn.sr.se/images/103/93751e41-25be-443e-aa50-3d65b67ae5ac.jpg?preset=api-default-square" width="40" alt="P4 Stockholm Svergies Radio"> P4 Stockholm</li><li id="202">
+                    <img src="https://static-cdn.sr.se/images/87/17ead849-8d1c-410f-84bd-21c65f5d2a89.jpg?preset=api-default-square" width="40" alt="P4 Sörmland Svergies Radio"> P4 Sörmland</li><li id="218">
+                    <img src="https://static-cdn.sr.se/images/114/b3c02693-d242-405f-920d-9607396bd8b8.jpg?preset=api-default-square" width="40" alt="P4 Uppland Svergies Radio"> P4 Uppland</li><li id="204">
+                    <img src="https://static-cdn.sr.se/images/93/aae3ef44-751f-4f29-a368-20b4ee68a655.jpg?preset=api-default-square" width="40" alt="P4 Värmland Svergies Radio"> P4 Värmland</li><li id="219">
+                    <img src="https://static-cdn.sr.se/images/125/e65995f0-2edf-4e4b-8acb-d8e466c964de.jpg?preset=api-default-square" width="40" alt="P4 Väst Svergies Radio"> P4 Väst</li><li id="215">
+                    <img src="https://static-cdn.sr.se/images/109/8c555a56-ddf7-403c-9d04-f0fa313d3445.jpg?preset=api-default-square" width="40" alt="P4 Västerbotten Svergies Radio"> P4 Västerbotten</li><li id="216">
+                    <img src="https://static-cdn.sr.se/images/110/98b81113-758c-499e-8370-0d7209ec85a3.jpg?preset=api-default-square" width="40" alt="P4 Västernorrland Svergies Radio"> P4 Västernorrland</li><li id="217">
+                    <img src="https://static-cdn.sr.se/images/112/c512aa7c-0c8c-4da2-84d0-b27320c851ad.jpg?preset=api-default-square" width="40" alt="P4 Västmanland Svergies Radio"> P4 Västmanland</li><li id="221">
+                    <img src="https://static-cdn.sr.se/images/159/98ab4945-95f6-42f1-901e-b276eb76474b.jpg?preset=api-default-square" width="40" alt="P4 Örebro Svergies Radio"> P4 Örebro</li><li id="222">
+                    <img src="https://static-cdn.sr.se/images/160/7bac93cd-2fff-489e-a92c-a042f1ab7c94.jpg?preset=api-default-square" width="40" alt="P4 östergötland Svergies Radio"> P4 Östergötland</li><li id="224">
+                    <img src="https://static-cdn.sr.se/images/224/2216734_512_512.jpg?preset=api-default-square" width="40" alt="Sameradian Svergies Radio"> SR Sápmi</li><li id="226">
+                    <img src="https://static-cdn.sr.se/images/226/adbad6dc-0609-4bd8-845a-6dec501eec11.jpg?preset=api-default-square" width="40" alt="Finska Svergies Radio"> Sveriges Radio Finska</li><li id="166">
+                    <img src="https://static-cdn.sr.se/images/166/36d8e8d4-68bc-4de9-b69c-63e2faa43eee.jpg?preset=api-default-square" width="40" alt="P6"> P6</li><li id="2576">
+                    <img src="https://static-cdn.sr.se/images/2576/8c9429e6-c7e3-411f-9b9d-dcbe5d50283c.jpg?preset=api-default-square" width="40" alt="P3 Din gata"> P3 Din gata</li><li id="2562">
+                    <img src="https://static-cdn.sr.se/images/2562/3679054_1400_1400.jpg?preset=api-default-square" width="40" alt="P2 Musik"> P2 Musik</li><li id="2755">
+                    <img src="https://static-cdn.sr.se/images/2755/804a02aa-8472-4129-89c2-b6efee09746e.jpg?preset=api-default-square" width="40" alt="Barnradio Svergies Radio"> Radioapans knattekanal</li><li id="2383">
+                    <img src="https://static-cdn.sr.se/images/2383/d813b5db-55e2-4a91-a090-25bdb8bb352d.jpg?preset=api-default-square" width="40" alt="SR Extra01 Svergies Radio"> SR Extra01</li><li id="2384">
+                    <img src="https://static-cdn.sr.se/images/2384/c160e908-00ff-47f7-bdf7-0834100950e8.jpg?preset=api-default-square" width="40" alt="SR Extra02 Svergies Radio"> SR Extra02</li><li id="2385">
+                    <img src="https://static-cdn.sr.se/images/2385/ba31b532-7eec-4d52-a193-41a6a935462f.jpg?preset=api-default-square" width="40" alt="SR Extra03 Svergies Radio"> SR Extra03</li><li id="2386">
+                    <img src="https://static-cdn.sr.se/images/2386/d05d0580-43ed-48ef-991b-01b536e03b33.jpg?preset=api-default-square" width="40" alt="SR Extra04 Svergies Radio"> SR Extra04</li><li id="2387">
+                    <img src="https://static-cdn.sr.se/images/2387/c4014734-149a-4a37-8d00-7faf0779431d.jpg?preset=api-default-square" width="40" alt="SR Extra05 Svergies Radio"> SR Extra05</li><li id="2388">
+                    <img src="https://static-cdn.sr.se/images/2388/787c76ef-8d6b-4e34-b26c-2b4036781b0c.jpg?preset=api-default-square" width="40" alt="SR Extra06 Svergies Radio"> SR Extra06</li><li id="2389">
+                    <img src="https://static-cdn.sr.se/images/2389/ad80ee1e-fa6c-48de-9900-0931af5f3e75.jpg?preset=api-default-square" width="40" alt="SR Extra07 Svergies Radio"> SR Extra07</li><li id="2390">
+                    <img src="https://static-cdn.sr.se/images/2390/e27ff38a-0166-469c-8c6d-6e7b820abcdc.jpg?preset=api-default-square" width="40" alt="SR Extra08 Svergies Radio"> SR Extra08</li><li id="3268">
+                    <img src="https://static-cdn.sr.se/images/3268/95ead021-0191-460b-b314-c5139f79c90c.jpg?preset=api-default-square" width="40" alt="SR Extra09 Svergies Radio"> SR Extra09</li><li id="3269">
+                    <img src="https://static-cdn.sr.se/images/3269/6d352564-1ff2-4b0f-8a65-d9dc7e2eba1f.jpg?preset=api-default-square" width="40" alt="SR Extra10 Svergies Radio"> SR Extra10</li><li id="3703">
+                    <img src="https://static-cdn.sr.se/images/3703/db15f29b-578f-44e3-a618-4a4932a509a5.jpg?preset=api-default-square" width="40" alt="SR Extra11 Svergies Radio"> SR Extra11</li><li id="3704">
+                    <img src="https://static-cdn.sr.se/images/3704/6387406d-224f-4495-9bea-68f510fbc44c.jpg?preset=api-default-square" width="40" alt="SR Extra12 Svergies Radio"> SR Extra12</li><li id="4842">
+                    <img src="https://static-cdn.sr.se/images/4842/b92bbffc-c722-48db-842d-0f7aac78a21d.jpg?preset=api-default-square" width="40" alt="SR Extra13 Svergies Radio"> SR Extra13</li><li id="4866">
+                    <img src="https://static-cdn.sr.se/images/4866/92556cd3-3254-4424-91bb-6ba511f60f4c.jpg?preset=api-default-square" width="40" alt="SR Extra14 Svergies Radio"> SR Extra14</li><li id="4868">
+                    <img src="undefined" width="40" alt="SR Extra15 Svergies Radio"> SR Extra15</li><li id="4540">
+                    <img src="https://static-cdn.sr.se/images/4540/dd7e579d-8e93-406a-b530-4fa8c5e434c3.jpg?preset=api-default-square" width="40" alt="Ekot Svergies Radio"> Ekot sänder direkt</li><li id="4951">
+                    <img src="https://static-cdn.sr.se/images/4951/b5ee8cac-8885-45f0-9dd9-d1ebede25196.jpg?preset=api-default-square" width="40" alt="P4 Plus Svergies Radio"> P4 Plus</li><li id="5283">
+                    <img src="https://static-cdn.sr.se/images/5283/8faff928-7740-455e-8bdb-204eb64adae2.jpg?preset=api-default-square" width="40" alt="P4 Södertälje Svergies Radio"> P4 Södertälje</li></ul>
+               </nav>
+            </section>
+        </div>
+        <div class="right">
+            <div id="info">
+        <h1>Ekot senaste nytt</h1>
+        <h4>Senaste nyheterna varje timme från Ekot.</h4>
+        <p>Fri Mar 24 2023 00:00:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Vaken</h1>
+        <h4>Musik, tävlingar och samtal. Ett program för dig som är vaken, helt enkelt.</h4>
+        <p>Fri Mar 24 2023 00:02:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Ekot senaste nytt</h1>
+        <h4>Senaste nyheterna varje timme från Ekot.</h4>
+        <p>Fri Mar 24 2023 01:00:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Vaken</h1>
+        <h4>Musik, tävlingar och samtal. Ett program för dig som är vaken, helt enkelt.</h4>
+        <p>Fri Mar 24 2023 01:02:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Ekot senaste nytt</h1>
+        <h4>Senaste nyheterna varje timme från Ekot.</h4>
+        <p>Fri Mar 24 2023 02:00:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Vaken</h1>
+        <h4>Musik, tävlingar och samtal. Ett program för dig som är vaken, helt enkelt.</h4>
+        <p>Fri Mar 24 2023 02:02:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Ekot senaste nytt</h1>
+        <h4>Senaste nyheterna varje timme från Ekot.</h4>
+        <p>Fri Mar 24 2023 03:00:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Vaken</h1>
+        <h4>Musik, tävlingar och samtal. Ett program för dig som är vaken, helt enkelt.</h4>
+        <p>Fri Mar 24 2023 03:02:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Ekot senaste nytt</h1>
+        <h4>Senaste nyheterna varje timme från Ekot.</h4>
+        <p>Fri Mar 24 2023 04:00:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr>
+        <h1>Vaken</h1>
+        <h4>Musik, tävlingar och samtal. Ett program för dig som är vaken, helt enkelt.</h4>
+        <p>Fri Mar 24 2023 04:02:00 GMT+0100 (centraleuropeisk normaltid)</p>
+        <hr></div>
+        </div>
+        <div class="right">
+        </div>
+
+        <footer>
+        </footer>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
+
+
+
+
+
+

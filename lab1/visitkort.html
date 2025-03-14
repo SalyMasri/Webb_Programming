@@ -1,0 +1,135 @@
+<!-- -->
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Visitkort</title>
+    <style id="aby-style"></style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1094.0" data-gr-ext-installed>
+    <div class="main" id="main">
+        <h2>Beställ ditt visitkort här: </h2>
+        <p>Företag .......
+            
+            <input type="text" id="company">
+        </p>
+        <p>
+            Efternamn ...
+            <input type="text" id="Lname">
+        </p>
+        <p>
+            Förnamn .....
+            <input type="text" id="Fname">
+        </p>
+        <p>
+            Title   ...........
+            <input type="text" id="title">
+        </p>
+        <p>
+            Telefon .......
+            <input type="text" id="tele">
+        </p>
+        <p>
+            E-post    ........
+            <input type="text" id="epost">
+        </p>
+        <label for="Bakgrundsfarg">Bakgrundsfärg:  </label>
+        <select id="Bakgrundsfarg" name="Bakgrundsfarg">
+            <option value="lightblue" id="lightblue">Ljusblå</option>
+            <option value="lightyellow" id="lightyellow">Ljusgul</option>
+            <option value="white" id="white">Vit</option>
+            <option value="turquoise" id="turquoise">Turkos</option>
+        </select>
+        <br>
+        <br>
+        <label for="Textfarg">Textfärg:  </label>
+        <select id="Textfarg" name="Textfarg">
+            <option value="black" id="black">Svart</option>
+            <option value="blue" id="blue">Blå</option>
+            <option value="red" id="red">Röd</option>
+            <option value="darkgreen" id="darkgreen">Mörkgrön</option>
+        </select>
+        <br>
+        <br>
+        <label for="Typesnitt">Typesnitt:  </label>
+        <select id="Typesnitt" name="Typesnitt">
+            <option value="Verdana" id="Verdana">Verdana</option>
+            <option value="Arial" id="Arial">Arial</option>
+            <option value="Tahoma" id="Tahoma">Tahoma</option>
+            <option value="Impact" id="Impact">Impact</option>
+        </select>
+        <br>
+        <br>
+        <p>
+            <input type="button" id="Nollställ" value="Nollställ">
+            <input type="button" id="SkrivUt" value="SkrivUt">
+        </p>
+    </div>
+    <div class="page2" id="page2" style="display: none;">
+        <h1 id="area1"> area1</h1>
+        <p id="area2"></p>
+        <p id="area3"></p>
+        <p id="area4"></p>
+        <p id="area5"></p>
+        <p id="area6"></p>
+        <br><br><br><br><br><br><br><br>
+
+    <p>
+        <input type="button" id="skapa" value="skapa nytt">
+    </p>
+</div>
+<script>
+    
+    document.getElementById("page2").style.display = "none"; //För att inte visa page, då använder jag inte en ny html fil
+    
+    "use strict";
+    
+    document.addEventListener("DOMContentLoaded", function(){  //DOM innehåll laddas
+        
+        document.getElementById("SkrivUt").addEventListener("click", function(){   //Knappen "skrivut" 
+        
+        document.getElementById("main").style.display = "none"; //visar inte main när man trycker på "skrivut"
+            document.getElementById("page2").style.display = "block"; //visar visitcard när man trycker på "skrivut"
+            document.getElementById("area1").innerHTML = document.getElementById("company").value;  
+            document.getElementById("area2").innerHTML = document.getElementById("Lname").value; 
+            document.getElementById("area3").innerHTML = document.getElementById("Fname").value; 
+            document.getElementById("area4").innerHTML = document.getElementById("title").value; 
+            document.getElementById("area5").innerHTML = document.getElementById("tele").value; 
+            document.getElementById("area6").innerHTML = document.getElementById("epost").value; 
+    
+            document.getElementById("page2").style.backgroundColor = document.getElementById("Bakgrundsfarg").value;
+            document.getElementById("page2").style.color = document.getElementById("Textfarg").value;
+            document.getElementById("page2").style.fontFamily = document.getElementById("Typesnitt").value;
+    
+    
+        });
+    
+        document.getElementById("Nollställ").addEventListener("click", function(){  //Knappen "nollställ" som ersätter orden som fanns med ' blank '
+            document.getElementById("area1").innerHTML = document.getElementById("company").value = '';  
+            document.getElementById("area2").innerHTML = document.getElementById("Lname").value = ''; 
+            document.getElementById("area3").innerHTML = document.getElementById("Fname").value = ''; 
+            document.getElementById("area4").innerHTML = document.getElementById("title").value = ''; 
+            document.getElementById("area5").innerHTML = document.getElementById("tele").value = ''; 
+            document.getElementById("area6").innerHTML = document.getElementById("epost").value = ''; 
+            });
+    
+        document.getElementById("skapa").addEventListener("click",function(){//Knappen "skapa" används för att skapa ett nytt kort + rensa gamla texter
+            document.getElementById("main").style.display = "block"; 
+            document.getElementById("page2").style.display = "none"; 
+            document.getElementById("area1").innerHTML = document.getElementById("company").value = '';  
+            document.getElementById("area2").innerHTML = document.getElementById("Lname").value = ''; 
+            document.getElementById("area3").innerHTML = document.getElementById("Fname").value = ''; 
+            document.getElementById("area4").innerHTML = document.getElementById("title").value = ''; 
+            document.getElementById("area5").innerHTML = document.getElementById("tele").value = ''; 
+            document.getElementById("area6").innerHTML = document.getElementById("epost").value = ''; 
+            });
+    })
+    
+    </script> 
+
+</body>
+  
+</html>
+
+
